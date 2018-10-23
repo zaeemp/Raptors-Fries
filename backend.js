@@ -21,7 +21,10 @@ function success(data) {
     var difference = Math.floor(millis/1000);
 
     if ((difference < 187200) && (nba_data[0][12] >= 12)){
-    	alert("FREE FRIES!")
+    	$("#yes").css("background-color", "green");
+    }
+    else{
+      $("#no").css("background-color", "red");
     }
 }
 
